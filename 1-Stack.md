@@ -129,7 +129,7 @@ browser_tab.go_back()
 ```
 
 ## Example Exercise 2 (Your turn)
-Another example, although it may seem incredibly similar, would be to navigate your computer's file system in the same way. If you are looking at files in a certain file folder and you click the "back" button, you will be moved to your current folder's parent folder (that contains the current folder, of course). That implies that the tree of folders between your current location and the main menu of the C:/ Drive can be interpreted as a tack. Feel free to use the Stack implementation used in Example one, and the following stubbed out "File Browser" class for you to implement similar features to the Web Browser in example 1:
+Another example, although it may seem incredibly similar, would be to navigate your computer's file system in the same way. If you are looking at files in a certain file folder and you click the "back" button, you will be moved to your current folder's parent folder (that contains the current folder, of course). That implies that the tree of folders between your current location and the main menu of the C:/ Drive can be interpreted as a stack. Feel free to use the Stack implementation used in Example one, and the following stubbed out "File Browser" class for you to implement similar features to the Web Browser in example 1:
 
 ```Python
 class FileBrowser:
