@@ -17,11 +17,13 @@ Although the nodes of a linked list tend to be very far apart in memory, because
 
 ![Jumbled Carabiner Chain](images/carabiners_jumbled.jpg)
 ![Extended Carabiner Chain](images/carabiners_stretched.jpg)
+
 <sub>Both images courtesy of Dylan Ruppell, taken 14 December 2022. Sharing under Creative Commons license.</sub>
 
 Just like the above carabiners may initially seem jumbled and chaotic, the use of nodes scattered pseudo-randomly around memory may also initially seem jumbled and chaotic. But by keeping track of where the chain begins and ends, just as the linked list class keeps track of the head and tail nodes in its underlying chain of nodes, the programmer will know exactly how to unravel that seemingly jumbled mess into something the program can use.
 
 ![visual aid for singly linked list](images/Linked_list_data_format.jpg)
+
 <sub>image courtesy of Wikimedia commons user 'Hiteshsaldi' (15 April 2013), used under Creative Commons license.</sub>
 
 ## Purpose of a Linked List
