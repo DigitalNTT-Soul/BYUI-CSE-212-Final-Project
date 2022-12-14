@@ -1,7 +1,8 @@
 # Stacks
 Stacks are relatively simple, as their name basically describes the fundamentals of exactly how they work and how you, as a programmer, should interact with them in software that you write. The easiest way to explain it is to compare a stack of data to a stack of pancakes. Generally speaking, you're supposed to only interact with the pancake that is currently on the top of the stack, which is also the newest, freshest (and most recently added) pancake that is currently in the stack (although other pancakes may well have been added and removed between this pancake being added and you now removing it).
 
-!!! Pancake image here
+![Stack of Pancakes](Pancake-640869.jpg)
+<sub>image courtesy of Wikimedia commons user 'Chefkitchen90' (17 September 2019) and used under Creative Commons License</sub>
 
 So with that visualization in mind, how does that apply to stacks of data? Simply put, while you could theoretically try and slip a pancake out from somewhere in the middle of the stack, the data structure that implements stacks of data doesn't allow that. Most commonly, the only allowed operations on a stack of data directly involve either counting the number of elements in the stack or acting on the "top" or "back" of the stack (two words for the same thing, used interchangeably. They represent the index of the element furthest away from zero). Common stack methods (when it is implemented as a class) include:
 
@@ -22,7 +23,12 @@ Stacks are primarily (almost exclusively, even) used to solve problems that requ
 ## How to Build a Stack Class
 The Stack data structure is the only data structure in this tutorial that can be emulated with a simple Python Array. That is because the simplest interpretation of a Stack is simply an array with more (intentionally) limited access options. This also means that stacks implemented with arrays as their underlying data storage structure would store each element of their data adjacent to one another in memory.
 
-!!!markdown table depicting adjacent memory here
+
+memory address| 0 | 1 | 2 | 3 | 4 |5| 6 | 7 | 8 | 9
+-------|---|---|---|---|---|-|---|---|---|---
+data   |'N'|'I'|'B'|'O'|'R'| |'D'|'E'|'R'|
+||||||||||top
+
 
 The primary reason that implementing a stack using an array (or defining a Stack class wrapped around an array) is so simple is because each of its features is already an built-in feature of arrays, so each of the major methods of the Stack data structure is effectively just a renaming of the appropriate array method.
 
