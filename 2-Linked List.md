@@ -17,6 +17,7 @@ Although the nodes of a linked list tend to be very far apart in memory, because
 
 ![Jumbled Carabiner Chain](images/carabiners_jumbled.jpg)
 ![Extended Carabiner Chain](images/carabiners_stretched.jpg)
+<sub>Both images courtesy of Dylan Ruppell, taken 14 December 2022. Sharing under Creative Commons license.</sub>
 
 Just like the above carabiners may initially seem jumbled and chaotic, the use of nodes scattered pseudo-randomly around memory may also initially seem jumbled and chaotic. But by keeping track of where the chain begins and ends, just as the linked list class keeps track of the head and tail nodes in its underlying chain of nodes, the programmer will know exactly how to unravel that seemingly jumbled mess into something the program can use.
 
@@ -34,6 +35,7 @@ The slowest part of using a linked list is the navigation and/or traversal of it
 Memory Address|0|1|2|3|4|5
 -|-|-|-|-|-|-
 Value|A|B|C|D|E|F
+
 <sub>Programmers can access the 4th element of the array simply by adding 3 to the memory address of the first element. That is how code like `array[3]` works under the hood</sub>
 
 Meanwhile, Linked Lists can only be navigated by starting at one end of the list (or an iterator from a previous traversal of the list) and navigating either forward or backward until the programmer can find what they are looking for. This leads to one of the simplest, most efficient O(1) operations in array-based data structures taking O(n) time in linked lists. As a result, any function of linked lists that involves traversing to a specific node (such as removing said node or adding a node before/after the found node) takes O(n) time despite the fact that the actual manipulation of the nodes once they are found takes O(1) time. There's also no known way around this that doesn't also simultaneously sacrifice all the benefits of a using a linked list in the first place.
