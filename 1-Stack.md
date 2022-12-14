@@ -154,6 +154,6 @@ file_browser.go_back()
 file_browser.go_back()
 file_browser.go_back()
 ```
-Note that navigating a filesystem requires much different syntax than navigating the web. For this example, every time __open_folder is called, the the entire filepath from 'C:/' to the target folder must be passed into it.
+Note that navigating a filesystem requires much different syntax than navigating the web. For this example, every time __open_folder is called, the the entire filepath from 'C:/' to the target folder must be passed into it, with slashes between the folder names.
 
 Once you've completed your attempt, you can compare it to this [Solution](12-stack_problem_2_solution.py) to see how you did.
